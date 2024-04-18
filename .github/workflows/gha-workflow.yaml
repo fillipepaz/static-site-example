@@ -30,6 +30,7 @@ jobs:
         with:
             role-to-assume: arn:aws:iam::704151674151:role/bucket-devopsdays-idp-role 
             role-session-name: GitHub_to_AWS_via_FederatedOIDC
+            aws-region: us-east-1
 
       # Runs a set of commands using the runners shell
       - name: Upload files
