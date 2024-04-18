@@ -26,10 +26,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Configure AWS Credentials
-          uses: aws-actions/configure-aws-credentials@v3
-          with:
-              role-to-assume: arn:aws:iam::704151674151:role/bucket-devopsdays-idp-role 
-              role-session-name: GitHub_to_AWS_via_FederatedOIDC
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+            role-to-assume: arn:aws:iam::704151674151:role/bucket-devopsdays-idp-role 
+            role-session-name: GitHub_to_AWS_via_FederatedOIDC
 
       # Runs a set of commands using the runners shell
       - name: Upload files
