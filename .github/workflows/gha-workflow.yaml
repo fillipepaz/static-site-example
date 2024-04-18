@@ -35,4 +35,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Upload files
         run: |
-          aws s3 sync . s3://s3-devopsdays-idp --exclude '.git/*' --exclude '.github/*'
+          aws s3 sync . s3://bucket-devopsdays-idp --exclude '.git/*' --exclude '.github/*'
